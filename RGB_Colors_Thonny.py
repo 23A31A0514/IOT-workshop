@@ -1,0 +1,26 @@
+import machine
+import utime
+rpin=machine.Pin(2,machine.Pin.OUT)
+gpin=machine.Pin(4,machine.Pin.OUT)
+bpin=machine.Pin(14 ,machine.Pin.OUT)
+def setcolor(r,g,b):
+    rpin.value(r)
+    gpin.value(g)
+    bpin.value(b)
+while(True):
+    setcolor(0,1,1)
+    utime.sleep(2)
+    setcolor(1,0,1)
+    utime.sleep(2)
+    setcolor(1,1,0)
+    utime.sleep(2)
+    setcolor(1,0,0)
+    utime.sleep(2)
+    setcolor(0,1,0)
+    utime.sleep(2)
+    setcolor(0,0,1)
+    utime.sleep(2)
+    setcolor(0,0,0)
+    utime.sleep(2)
+    setcolor(1,1,1)
+    utime.sleep(2)
