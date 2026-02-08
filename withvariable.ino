@@ -3,7 +3,7 @@ void setup() {
   pinMode(ledpin,OUTPUT);
 
 }
-
+// basic implementation
 void loop() {
   digitalWrite(ledpin,HIGH);
   delay(1000);
